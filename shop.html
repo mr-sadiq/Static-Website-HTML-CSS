@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop Website By Armaan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo arrange-left wid-25">
+                <h1><span>Online</span><span>Shop</span></h1>
+            </div>
+
+            <div class="search-product arrange-left wid-50">
+                <input type="text" placeholder="Search for Products">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="selected-product arrange-left wid-25">
+                <button class="common-btn"><span>
+                        <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>0</a>
+                    </span></button>
+                <button class="common-btn"><span>
+                        <a href="./cart.html"> <i class="fa-solid fa-heart"></i>0</a>
+                    </span></button>
+            </div>
+        </div>
+    </div>
+    <div class="full-banner-wrapper">
+        <div class="shop-header">
+            <h1>Women's Dress Collection</h1>
+            <h3>- Our Shop -</h3>
+        </div>
+        <div class="wrapper next-row">
+            <div class="sort-options">
+                <select name="" id="">
+                    <option  selected="1">Options</option>
+                    <option value="2">By Name</option>
+                    <option value="3">By Rating</option>
+                    <option value="4">By Latest</option>
+                </select>
+            </div>
+            <div class="wid-25 arrange-left">
+                <h3>Filter By Price</h3>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" checked id="price-all">
+                    <label class="custom-control-label" for="price-all">All Price</label>
+                    <span class="filter-prod-count">1000</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="0-100">
+                    <label class="custom-control-label" for="0-100">$0 - $100</label>
+                    <span class="filter-prod-count">100</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="100-200">
+                    <label class="custom-control-label" for="100-200">$100 - $200</label>
+                    <span class="filter-prod-count">200</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="200-300">
+                    <label class="custom-control-label" for="200-300">$200 - $300</label>
+                    <span class="filter-prod-count">250</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="300-above">
+                    <label class="custom-control-label" for="300-above">$300 - $above</label>
+                    <span class="filter-prod-count">450</span>
+                </div>
+                <h3>Filter By Color</h3>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" checked id="color-all">
+                    <label class="custom-control-label" for="color-all">All Color</label>
+                    <span class="filter-prod-count">1000</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="black">
+                    <label class="custom-control-label" for="black">Black</label>
+                    <span class="filter-prod-count">300</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="red">
+                    <label class="custom-control-label" for="red">Red</label>
+                    <span class="filter-prod-count">150</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="blue">
+                    <label class="custom-control-label" for="blue">Blue</label>
+                    <span class="filter-prod-count">350</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="white">
+                    <label class="custom-control-label" for="white">White</label>
+                    <span class="filter-prod-count">200</span>
+                </div>
+                <h3>Filter By Size</h3>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" checked id="size-all">
+                    <label class="custom-control-label" for="size-all">All Size</label>
+                    <span class="filter-prod-count">1000</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="small">
+                    <label class="custom-control-label" for="small">Small</label>
+                    <span class="filter-prod-count">150</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="medium">
+                    <label class="custom-control-label" for="medium">Medium</label>
+                    <span class="filter-prod-count">250</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="large">
+                    <label class="custom-control-label" for="large">Large</label>
+                    <span class="filter-prod-count">400</span>
+                </div>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" id="extra large">
+                    <label class="custom-control-label" for="extra large">Extra Large</label>
+                    <span class="filter-prod-count">200</span>
+                </div>
+            </div>
+            <div class="wid-75 arrange-left">
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image21.jpg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Women`s blue shirt </h6>
+                            <div class="cart-price">
+                                <h6 class="current">$125.00</h6>
+                                <h6 class="last">$160.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image22.jpg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Women Jeans Shirt</h6>
+                            <div class="cart-price">
+                                <h6 class="current">$140.00</h6>
+                                <h6 class="last">$170.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image24.jpg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Women`s Pullover</h6>
+                            <div class="cart-price">
+                                <h6 class="current">160.00</h6>
+                                <h6 class="last">$180.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image23.jpg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Stylish Tunic</h6>
+                            <div class="cart-price">
+                                <h6 class="current">$175.00</h6>
+                                <h6 class="last">$200.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image9.jpeg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Fuzzy Hoodies</h6>
+                            <div class="cart-price">
+                                <h6 class="current">$180.00</h6>
+                                <h6 class="last">$210.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image10.jpeg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Padded Hooded Jacket</h6>
+                            <div class="cart-price">
+                                <h6 class="current">310.00</h6>
+                                <h6 class="last">360.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image25.jpg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Women T-shirt</h6>
+                            <div class="cart-price">
+                                <h6 class="current">$110.00</h6>
+                                <h6 class="last">$130.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image26.jpg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Black Pullover</h6>
+                            <div class="cart-price">
+                                <h6 class="current">$165.00</h6>
+                                <h6 class="last">$190.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-33 arrange-left">
+                    <div class="cart">
+                        <div>
+                            <img src="image/image27.jpg" alt="1">
+                        </div>
+                        <div class="cart-details">
+                            <h6 class="name-head">Women Denim Dress</h6>
+                            <div class="cart-price">
+                                <h6 class="current">$125.00</h6>
+                                <h6 class="last">$140.00</h6>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="./cart.html"><i class="fa-solid fa-eye"></i>&nbsp;View Details</a>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper next-row">
+            <div class="footer">
+                <div class="wid-25 arrange-left margin-right-5">
+                    <div class="logo">
+                        <h1><span>Online</span><span>Shop</span></h1>
+                    </div>
+                    <p class="footer-desc">
+                        Lorem, ipsum dolor blanditiis repudiandae, accusantium ends provident laudantium harum under
+                        inventore.
+                    </p>
+                    <ul class="contact-list">
+                        <li><i class="fa fa-map-marker-alt icon"></i>143 street, New Delhi India</li>
+                        <li><i class="fa fa-envelope icon"></i>myshop@example.com</li>
+                        <li><i class="fa fa-phone icon"></i>+099 707 96743</li>
+                    </ul>
+                </div>
+                <div class="wid-25 arrange-left quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Home</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Our Shop</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Shop Detail</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Shopping Cart</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Checkout</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Contack Us</span></a></li>
+                    </ul>
+                </div>
+                <div class="wid-25 arrange-left quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Home</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Our Shop</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Shop Detail</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Shopping Cart</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Checkout</span></a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i><span>Contack Us</span></a></li>
+                    </ul>
+                </div>
+                <div class="wid-25 arrange-left">
+                    <h3>News Letter</h3>
+                    <input type="text" class="footer-input" placeholder="Enter Name">
+                    <input type="email" class="footer-input" placeholder="Enter Email">
+                    <button class="footer-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div>
+                &#169;<b>&nbsp;My Shop</b> All Rights Reserved. Designed by <b>Sadiq.</b>
+            </div>
+            <img src="image/image20.png" alt="payment-option">
+        </div>
+    </div>
+</body>
+
+</html>
